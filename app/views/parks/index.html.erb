@@ -1,0 +1,11 @@
+<h1>Total parks for the state of <%=@state%> is <%=@total_parks%></h1>
+
+<%@selected_parks.each do |park|%>
+  <section id='park-<%= park.id %>'>
+  <h2><%= park.name %></h2>
+  <p><%= park.hours %></p>
+  <p><%= park.directions %></p>
+  <p><%= park.description %></p>
+<%end%>
+  
+
